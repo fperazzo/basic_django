@@ -27,7 +27,7 @@ class Livro(models.Model):
 	    if not self.id:
 	    	self.created = timezone.now()
 	    self.modified = timezone.now()
-	    return super(Orcamento, self).save(*args, **kwargs)
+	    return super(Livro, self).save(*args, **kwargs)
 
 		def __str__(self):
 		return  'Livro: '+ str(self.id) +' Titulo '+ str(self.nomelivro)
@@ -35,7 +35,7 @@ class Livro(models.Model):
 #Entidade Associativa - para evitar relações many-to-many
 
 class Livro_TipoLivro(models.Model):
-    idlivro = models.ForeignKey(Orcamento, on_delete=models.CASCADE)
+    idlivro = models.ForeignKey(Livro, on_delete=models.CASCADE)
     idtipolivro = models.ForeignKey(TipoLivro, on_delete=models.CASCADE)
     def __str__(self):
         return str(self.idlivro) +' op. '+ str(self.idtipolivro)
