@@ -1,0 +1,22 @@
+DEBUG de projetos em DJANGO
+
+Incluir no código no ponto onde quer ver as variáveis:
+
+from ipdb import set_trace; set_trace()
+
+
+
+ipdb> form                                                                                                                                                                                              
+<Eq1_Form bound=True, valid=Unknown, fields=(idmetcol)>
+
+ipdb> form.fields                                                                                                                                                                                       
+{'idmetcol': <django.forms.models.ModelMultipleChoiceField object at 0x7fa6f566ba50>}
+
+ipdb> form.fields['idmetcol']                                                                                                                                                                           
+<django.forms.models.ModelMultipleChoiceField object at 0x7fa6f566ba50>
+
+ipdb> dir(form.fields['idmetcol'])                                                                                                                                                                      
+['__class__', '__deepcopy__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slotnames__', '__str__', '__subclasshook__', '__weakref__', '_check_values', '_get_choices', '_get_queryset', '_queryset', '_set_choices', '_set_queryset', 'bound_data', 'choices', 'clean', 'default_error_messages', 'default_validators', 'disabled', 'empty_label', 'empty_values', 'error_messages', 'get_bound_field', 'get_limit_choices_to', 'has_changed', 'help_text', 'hidden_widget', 'initial', 'iterator', 'label', 'label_from_instance', 'label_suffix', 'limit_choices_to', 'localize', 'prepare_value', 'queryset', 'required', 'run_validators', 'show_hidden_initial', 'to_field_name', 'to_python', 'valid_value', 'validate', 'validators', 'widget', 'widget_attrs']
+
+ipdb> form.cleaned_data                                                                                                                                                                                 
+{'idmetcol': <QuerySet [<Orcamento_Situacao: Orc ID 1 chave_proj B0000 Final Produtor BM 2 7/8"EU>]>}
