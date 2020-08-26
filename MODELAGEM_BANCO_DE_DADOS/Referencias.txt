@@ -1,0 +1,15 @@
+Texto extraido das video aulas Bóson Treinamentos:
+
+Youtube: https://www.youtube.com/watch?v=Q_KTYFgvu1s&list=PLucm8g_ezqNoNHU8tjVeHmRGBFnjDIlxD
+
+Códigos extraído.
+
+CRIAÇÃO BD:
+
+Site: http://www.bosontreinamentos.com.br/modelagem-de-dados/modelagem-de-dados-implementacao-do-banco-de-dados-do-projeto-pratico/ 
+Youtube: https://www.youtube.com/watch?v=c7r8t4qYWS0 
+
+TESTE/CONSULTAS BD:
+
+YOUTUBE → https://www.youtube.com/watch?v=XLAEHJg_5YQ 
+SITE → http://www.bosontreinamentos.com.br/modelagem-de-dados/modelagem-de-dados-testes-no-banco-de-dados-do-projeto-pratico/ 
